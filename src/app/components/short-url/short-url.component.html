@@ -1,0 +1,25 @@
+<div class="centrar-text container">
+    <h1>Acortador de Url</h1>
+    <h2>Ingrese la url a acortar</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-8"> 
+            <input class="form-control" type="text" placeholder="Ingrese la url" [(ngModel)]="nombreUrl">
+        </div>
+        <div class=" col-4">
+            <button class="btn btn-primary btn-md" (click)="procesarUrl()">Acortar</button>
+        </div>
+    </div>
+    <div class="spinner" *ngIf="loading">
+        <app-spinner></app-spinner>
+    </div>
+    
+    <div class="row" *ngIf="urlProcesada">
+        <div class="col-8">
+            <input readonly class="form-control mt-4 col-8" type="text" placeholder="Url procesada" [(ngModel)]="urlShort" [value]="urlShort">
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,17 @@
+.centrar-text{
+    margin: 2rem;
+    text-align: center;
+}
+
+.centrar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
